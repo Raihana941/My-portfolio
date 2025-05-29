@@ -1,0 +1,120 @@
+body {
+  position: relative;
+  margin: 0 0 0 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../media/background1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  z-index: -1;
+}
+.classcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #776111;
+  color: #f5f5f5;
+  font-size: large;
+  margin-top: 0;
+  font-family: tagesschrift;
+}
+.title {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 15px;
+}
+a {
+  color: #f5f5f5;
+  transition: all 0.5s linear;
+}
+a:hover {
+  transform: scale (1.5);
+  color: white;
+}
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  height: 100vh;
+}
+img {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  z-index: 1;
+}
+.maintext {
+  font-size: 80px;
+  color: #776111;
+  font-family: dancing script;
+  position: relative;
+  z-index: 2;
+}
+@keyframes slideInright {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.first {
+  animation: slideInright 2s ease-in-out forwards;
+  display: inline-block;
+}
+@keyframes slideInleft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.name {
+  animation: slideInleft 2s ease-in-out forwards;
+  display: inline-block;
+}
+@keyframes slideInright {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.lastname {
+  animation: slideInright 2s ease-in-out forwards;
+  display: inline-block;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+  background-color: #776111;
+  position: static;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}

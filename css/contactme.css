@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  background-color: #f3c623;
+}
+.classcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #776111;
+  color: #f5f5f5;
+  font-size: large;
+  margin-top: 0;
+  font-family: tagesschrift;
+}
+.title {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 15px;
+}
+a {
+  color: #f5f5f5;
+  transition: all 0.5s linear;
+}
+a:hover {
+  transform: scale (1.5);
+  color: white;
+}
+.flexcontainertwo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #776111;
+}
+.flexcontainertwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro {
+  text-align: center;
+  color: #776111;
+}
+.message {
+  padding: 20px;
+}
+input {
+  border: solid #776111 2px;
+  border-radius: 5px;
+}
+#submit {
+  border: solid #776111 2px;
+  border-radius: 4px;
+  margin-bottom: 70px;
+  margin-top: 10px;
+  transition: all 0.5s linear;
+}
+#submit:hover {
+  transform: scale(1.05);
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+  background-color: #776111;
+  position: static;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
